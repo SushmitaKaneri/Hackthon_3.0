@@ -144,7 +144,7 @@ pin(e){
     <Col xs="12" sm="6" md="3">
       <Card className="border-info">
         <CardHeader>
-        <b>{this.state.result==null?"":e.title}</b> <Button color="primary" id={this.state.result==null?"":e._id} onClick={this.handle_edit} style={{'float':'right'}}>Edit</Button>
+        <b>{this.state.result==null?"":e.title}</b> 
       </CardHeader>
         <CardBody id={e._id+'card'} style={{background:e.note_color}}>
           <Alert>{e.description}</Alert>
