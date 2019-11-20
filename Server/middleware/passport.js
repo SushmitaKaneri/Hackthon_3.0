@@ -11,7 +11,7 @@ module.exports = function (passport){
     passport.serializeUser((user,done)=>{
         ////console.log("inside serial");
         //req.session.user=user;
-        done(null,{_id: user._id,isAdmin: user.isAdmin});
+        done(null,{_id: user._id});
     });
 
     // used to deserialize for proving you're logged in
